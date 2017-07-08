@@ -1,49 +1,75 @@
 body{
-	background-color:#f0f0f0;
-	
-	}
+    background-color:#f0f0f0;
+    margin: 0;
+    }
 
 /*Start NavBar*/
 .navbar{
-	background-color: #FFF;
-	border: none;
+    background-color: #FFF;
+    border: none;
 }
+.navbar .cont{
+     border-left: 1px solid #ccc;
+     border-left: 1px solid #ccc;
+    height: 71px;
+    margin-bottom: -20px;
+    margin-top: -7px;
+    /* padding-right: 136px; */
+    padding-left: 20px;
+    padding-top: 4px;
+    margin-left: 100px;
+}
+
 .navbar-form .form-control{
-	    margin-top: 16px;
-	    margin-left: 93px;
-   		border-radius: 0;
+        margin-top: 16px;
+        border-radius: 0;
+        width: 400px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #000;
+    font-weight: bold;
+    border-left: 1px solid #cccccc;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #000;
+}
+.nav > li > a > img {
+    width: 45px;
 }
 .navbar .fa{
     font-size: 43px;
     color: #a4a5a4;
-    border-left: 1px solid #e9eae9;
+    
     padding-left: 6px;
 }
-@media(max-width: 760px){
+@media(max-width: 766px){
 .navbar-form .form-control{
-		width:40%; 	
-}	
+        width:40%;  
+}   
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border:none;
 }
-/*Start NavBar*/
+}
+/*End NavBar*/
 /*Start Activity section */
 .Activity .progress{
-	text-align: center;
-	width: 100%;
-	margin: auto;
-	border: 2px solid #ff3480;
-	min-height: 60px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border: 2px solid #ff3480;
+    min-height: 60px;
 
 }
 .Activity .pro{
-	width: 50%;
+    width: 50%;
     height: 100%;
     font-size: 154%;
 }
 
 .Activity .progress-bar{
-	background-color: #ff3480;
-	-webkit-box-shadow:none;
-	padding-top: 15px;
+    background-color: #ff3480;
+    -webkit-box-shadow:none;
+    padding-top: 15px;
    font-size: 141%
 }
 .Activity .Button{
@@ -51,17 +77,18 @@ body{
     background-color: #898989;
     color: #fff;
     font-size: 12px;
-    padding: 0 36px;
+        padding: 0 64px;
+    margin-left: 22px;
 }
 .Activity .row{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 .left-box .progress{
-	border: 2px solid #898989;
-	margin-bottom: 10px;
-	min-height: 75px;
+    border: 2px solid #898989;
+    margin-bottom: 20px;
+    min-height: 80px;
 }
-.left-box .progress .pro{    
+.left-box .progress .pro:hover{    
 height: 100%;
     font-size: 104%;
     text-align: left;
@@ -72,21 +99,21 @@ height: 100%;
     padding-left: 25px;
 
 }
-.left-box .progress .pro1{    
-		height: 100%;
-  	 	color: #8c8c8c;
-  		background-color: #f0f0f0;
-  		    width: 50%;
-  		    font-size: 104%;
+.left-box .progress .pro{    
+        height: 100%;
+        color: #8c8c8c;
+        background-color: #f0f0f0;
+            width: 50%;
+            font-size: 104%;
     text-align: left;
     
     
     line-height: 1em;
     padding-left: 25px;
 }
-.left-box .progress .pro1 span{
-	font-size: 10px;
-}	
+.left-box .progress .pro span{
+    font-size: 10px;
+}   
 
 .left-box .progress-bar{
     background-color: #FFF;
@@ -98,19 +125,19 @@ height: 100%;
 }
 
 .left-box .progress .pro span{
-	font-size: 10px;
-}	
+    font-size: 10px;
+}   
 
 /*Sart right-box*/
     .right-box .top{
-    	text-align: left;
-    	color: #000;
-    	border: 2px solid #898989;
-    	background-color: #fff;
+        text-align: left;
+        color: #000;
+        border: 2px solid #898989;
+        background-color: #fff;
     }
 
     .right-box .top .heading{
-    	    background-color: #ff3480;
+            background-color: #ff3480;
     color: #fff;
     min-height: 59px;
     font-size: 25px;
@@ -118,140 +145,160 @@ height: 100%;
     padding-top: 8px;
     }
     .right-box .top p{
-    	 padding-left: 23px;
-    	 padding-top: 7px;
+         padding-left: 23px;
+         padding-top: 7px;
     font-weight: bold;
     }
    .right-box .top p a{
-    	 color: #000;
+         color: #000;
     }
     .right-box .top p span{
-    	font-size: 20px;
-    }	
+        font-size: 20px;
+    }   
     .right-box .top p .green{
-    	 color:#9be5d7;
+         color:#9be5d7;
     }
 /*Start Med*/
-   .right-box .med .quantity{
-   		border: 2px solid #898989;
-    	background-color: #fff;
-   		 padding-left: 23px;
-    	 padding-top: 7px;
-    	font-weight: bold;
-    	text-align: left;
-    	margin-left: 6px;
+   .right-box .med .l, .m, .r {
+        border: 2px solid #898989;
+        background-color: #fff;
+         padding-left: 23px;
+         padding-top: 7px;
+        font-weight: bold;
+        text-align: left;
+        
 
-    	max-width: 31%;
-    	min-height: 69px;
+        max-width: 31%;
+        min-height: 69px;
     }
-    @media (max-width: 460px){
-    	  .right-box .med .quantity{  padding-left: 5px;
-    padding-top: 3px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 14px;
-    max-width: 27%;
+     .right-box .med .l{
+        margin-left: 15px; 
+     }
+      .right-box .med .m{
+        margin-left: 5px;
+        margin-right: 6px;
+      }
+    @media (max-width: 991px){
+          .right-box .med .l, .m, .r{ 
+           padding-left: 5px;
+            padding-top: 3px;
+            font-weight: bold;
+            text-align: left;
+        
+             max-width: 30%;
+    }}
+   
+    @media (max-width: 766px){
+          .right-box .med .l, .m, .r{ 
+          
+        
+             max-width: 31%;
+    }} @media (max-width: 400px){
+          .right-box .med .l, .m, .r{ 
+          
+        
+             max-width: 29%;
     }}
     /*End med*/
     /*Start bottom*/
     .right-box .bottom{
     text-align: left;
-    	color: #000;
-    	border: 2px solid #898989;
-    	background-color: #fff;
-    	margin-top: 10px;
+        color: #000;
+        border: 2px solid #898989;
+        background-color: #fff;
+        margin-top: 10px;
     }
     .right-box .bottom p{
-    	 padding-left: 23px;
-    	 padding-top: 7px;
-    	font-weight: bold;
+         padding-left: 23px;
+         padding-top: 7px;
+        font-weight: bold;
     }
     .right-box .bottom span{
-    	color: #000;
-    	font-weight: normal;
+        color: #000;
+        font-weight: normal;
     font-size: 15px;
     }
     .right-box .bottom .info >p{
-    	display: inline-block; 
-    	margin-right: 50px;
+        display: inline-block; 
+        margin-right: 50px;
     } 
     .right-box .bottom p a{
-    	 color: #000;
+         color: #000;
     }
     .right-box .bottom button{
-    	margin-left: 27px;
+        margin-left: 27px;
     margin-bottom: 20px;
     margin-top: 13px;
     background-color: #04bd9c;
     width: 29%;
     height: 47px;
-    color: #898989;	
+    color: #FFF; 
     }
     /*End bottom*/
 /*End right-box*/
 /*End Activity section */
 /*Start Calender Section*/
 .Calendar{
-	margin: 40px 10px;
-		padding: 0;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		font-size: 14px;
+    margin: 40px 10px;
+        padding: 0;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+        font-size: 14px;
 }
 #calendar {
-		max-width: 900px;
-		margin: 0 auto;
-		font-size: 11px;
-	}
-	.fc-center h2{
-		font-size: 23px;
-	}
-	.fc-content-skeleton tr{
-		border-bottom: 1px solid #dddddd;
-	}
-	td .fc-day-top {
-		padding: 0px 8%;
-	}
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 11px;
+    }
+    .fc-center h2{
+        font-size: 23px;
+    }
+    .fc-content-skeleton tr{
+        border-bottom: 1px solid #dddddd;
+    }
+    td .fc-day-top {
+        padding: 0px 8%;
+    }
 
 
 /*End Calender Section*/
 /*Start Footer Section*/
-	.footer{
-	background-color: #242b39;
-	font-size: 20px;
-	padding-top: 40px;
+    .footer{
+    background-color: #242b39;
+    font-size: 20px;
+    padding-top: 40px;
 }
 .footer p{
-	display: block;
-	color: #fff; 
-	text-align: left;
+    display: block;
+    color: #fff; 
+    text-align: left;
 }
 .footer a{
-	color: #7aaab5;
-	text-decoration: none;
+    color: #7aaab5;
+    text-decoration: none;
 }
 .footer ul{
-	text-align: left;
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 .footer .padding{
-	padding: 10px;
+    padding: 10px;
 }
 .footer img{
-	width: 75%;
+    width: 110%;
 }
 .footer h1,h3,h4{
-	color: #fff;
-	margin: 3px;
+    color: #fff;
+    margin: 3px;
 }
 i{
-	font-size: 30px;
-	color: #fff;	
+    font-size: 30px;
+    color: #fff;    
 }
 .cookies {
-	background-color: #0c0e13;
-	padding: 5px 0px 15px 30px;
-	text-align: left;
+    background-color: #0c0e13;
+    padding: 5px 0px 15px 30px;
+    text-align: left;
 }
 /*End Footer Section*/
